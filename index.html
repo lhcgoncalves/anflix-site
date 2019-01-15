@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Anflix | Conheça séries independentes do mundo inteiro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <style>
+        .is-white-spaced { white-space: normal; height: auto; }
+    </style>
+</head>
+
+<body>
+	<section class="hero is-dark is-bold is-fullheight">
+        <div class="hero-body">
+			<div class="container is-fluid">
+            <div class="columns is-multiline is-vcentered">
+				<div class="column has-text-right is-half">
+                    <img src="anflix.png" alt="Anflix" title="Anflix" />
+				</div>
+				<div class="column is-half">
+					<form action="https://formspree.io/contact@anflix.com" class="box">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input name="name" class="input" type="text" placeholder="Nome completo">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </p>
+                        </div>
+						<div class="field">
+							<p class="control has-icons-left has-icons-right">
+								<input name="email" class="input" type="email" placeholder="Email">
+								<span class="icon is-small is-left">
+									<i class="fas fa-envelope"></i>
+								</span>
+							</p>
+						</div>
+						<div class="field">
+                            <div class="control columns">
+                                    <div class="column is-half">
+                                        <button class="button is-success is-large is-white-spaced">
+									       Solicitar convite BETA
+								        </button>
+                                    </div>
+                                    <div class="column">
+                                        <p class="has-text-grey-light">Ganhe 6 meses grátis<br />e 20% de desconto <b>pra sempre</b></p>
+                                    </div>
+                            </div>
+						</div>
+					</form>
+				</div>
+                <div class="column is-full has-text-centered">
+                    <h2 class="subtitle">Conheça séries independentes <b>do mundo inteiro</b></h2>
+                </div>
+			</div>
+            </div>
+        </div>
+        <div class="hero-footer has-text-centered"><span class="icon"><i class="fas fa-chevron-down fa-3x"></i></span></div>
+    </section>
+
+    <section class="section">
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">Usuários BETA</p>
+                    <p class="title" id="downloads">34456</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">Séries</p>
+                    <p class="title">1689</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">Curtas</p>
+                    <p class="title">12984</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading">Longas</p>
+                        <p class="title">873</p>
+                    </div>
+            </div>
+        </nav>
+    </section>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <script type="text/javascript">
+        setInterval(function() {
+            let random  = parseInt(Math.floor(Math.random() * 7 + 1));
+
+            let el = document.getElementById('downloads');
+            el.innerText = parseInt(el.innerText) + random;
+
+        }, 2000);
+
+    </script>
+
+</body>
+</html>
